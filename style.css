@@ -1,0 +1,413 @@
+/* Colors
+green-light #7BC28F
+green-dark #60865a
+brown-light #BB9981
+brown-dark #534340
+*/
+
+
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswold",sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color:whitesmoke;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 2vmin;
+  text-align: left;
+}
+
+/*vw and vh are used to expand the headers to the users viewport size. The background img is also positioned here*/
+
+/* NavBar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color:whitesmoke;
+  font-size: 2.5vmin;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./img/forest3.jpg');
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin
+}
+
+.logomain {
+  width: 50%;
+}
+
+.line {
+  width: 300px;
+  height: 8px;
+  background: #7BC28F;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  padding: 20px 40px;
+  background: #7BC28F;
+  border-radius: 30px;
+  color: whitesmoke;
+  font-size: 2vmin;
+  font-weight: bold;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Projects */
+img {
+  border-radius: 50px;
+  width: 50%;
+}
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #7BC28F;
+}
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  
+
+}
+.row .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.projects .row {
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color:#60865a;
+  margin: 30px auto;
+  padding-top: 1.5vmin;
+}
+
+p {
+  color: #60865a;
+  padding: 0px 40px;
+  text-align: center;
+}
+
+.projects .ctn {
+  margin-top: 30px;
+}
+
+.whatWeOffer {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/tree2.1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  
+}
+
+.whatWeOffer-content {
+  width: 80%;
+  padding: 50px;
+  color:whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.whatWeOffer-content h1 {
+  font-size: 7vmin;
+  margin: 50px;
+}
+
+.whatWeOffer-content .line{
+  margin-bottom: 50px;
+}
+
+.whatWeOffer-content p {
+  color: whitesmoke;
+  text-align: left;
+}
+
+.whatWeOffer-content .ctn{
+  margin-top: 40px;
+}
+
+.whatWeOffer .line {
+  margin: 50px;
+}
+
+.content-col {
+  width: 40%;
+}
+
+.image-col {
+  width: 60%;
+}
+
+.ourApproach .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding-left: 25%;
+}
+
+.image-gallery img {
+  max-width: 300px;
+  margin: 15px;
+}
+
+.content-col h1{
+font-size: 7vmin;
+color: #7BC28F;
+}
+
+.content-col .line {
+  margin-left: -1px;
+}
+
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.content-col .ctn {
+  margin-left: -100px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #60865a;
+  text-align: center;
+}
+
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+  padding: 20px auto;
+}
+
+/* Mobile Device */
+
+@media only screen and (max-width:850px){
+  .menu-btn{
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #AD715E;
+    margin-top: -950px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 7%;
+    border-bottom-left-radius: 7%;
+  }
+
+  .nav-links li {
+    margin: 30px auto;;
+    font-size: 4vmin;
+  }
+
+  /* Projects */
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col {
+    margin: 20px auto;
+  }
+
+  .col img {
+    max-width: 90%;
+  }
+
+  /* What We Offer */
+
+  .whatWeOffer-content {
+    width: 100%;
+  }
+
+  .ourApproach .col {
+    width: 90%;
+  }
+
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-gallery img {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+}
+
+/* Animations */
+
+img {
+  transition: transform .3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.ctn:hover {
+  background: whitesmoke;
+  color: #7BC28F;
+  box-shadow: 2px 2px 5px black;
+}
+
+li:hover {
+  color:#7BC28F;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+/* Form Styles */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #60865a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #7BC28F;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+h3 {
+  color: #7BC28F;
+}
+

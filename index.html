@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald&display=swap');
+      </style>
+    <title>Edge Tree Surgery</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">Edge Tree Surgery</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="index.html"></a>Home</li>
+        <li><a href="about.html"></a>About Us</li>
+        <li><a href="services.html"></a>Services</li>
+        <li class="ctn"><a href="contact.html"></a>Contact Us</li>
+      </ul>
+      <img src="./img/menu.png" alt="" class="menu-btn">
+    </nav>
+    
+<!-- Contains company logo and slogan-->
+    <header>
+      <div class="header-content">
+        <img class="logomain" src="./img/logonew.svg" alt="">
+        <h2>Environmentally friendly, Skilled, Reliable</h2>
+        <div class="line"></div>
+        <h1>Edge Tree Surgery</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </header>
+
+    <!-- Projects -->
+
+    <section class="projects">
+      <div class="title">
+        <h1>Past Projects</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col1">
+            <img src="./img/tree4.jpg" alt="">
+            <h4>Small Project</h4>
+            <p class="projectP">Small projects include: Storm damage, Tree Pruning, Crown Thinning, Stump Grinding, Pollarding.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col1">
+          <img src="./img/tree5.jpg" alt="">
+          <h4>Large Project</h4>
+          <p class="projectP">Small projects include: Deadwooding, Chemical Treatment, Tree Felling, Tree Reductions.</p>
+          <a href="#" class="ctn">Learn More</a>
+      </div>
+      </div>
+    </section>
+<!-- Banner showing what the compnay offers while displaying a background img -->
+    <section class="whatWeOffer">
+      <div class="whatWeOffer-content">
+        <h1>What We Offer </h1>
+        <div class="line"></div>
+        <p>We offer a free no obligation quote, which also comes with complimentary advisory service, where we will recommend any works we deem necessary,
+          We can organise planning applications for any trees protected by tree preservation orders.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+<!-- breif description of edge tree surgerys approach when taking on jobs. also contains a small gallery-->
+    <section class="ourApproach">
+      <div class="row">
+        <div class="col content-col">
+          <h1>Our Approach when it comes to the job</h1>
+          <div class="line"></div>
+          <p>With over 25 years experience in Arboriculture, we apply professional approach to all your Tree Surgery needs to rejuvenate your outdoor spaces.
+            We look forward to improving your outdoor living space.</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="./img/tree6.jpg" alt="">
+            <img src="./img/tree7.jpg" alt="">
+            <img src="./img/tree8.jpg" alt="">
+            <img src="./img/tree9.jpg" alt="">
+            <img src="./img/tree10.jpg" alt="">
+            <img src="./img/tree11.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- footer containing contact details and copyright info-->
+    <section class="footer">
+      <p>Contact Us for a free quote
+        Give us a call on: 01234 567 890 or 09876 543 210</p>
+        <p>Storm Damage: 24 Hour call out - 01234 567 890</p>
+      <p>Copyright © 2022 Edge Tree Surgery</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn')
+      const navlinks = document.querySelector('.nav-links')
+
+      menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+      })
+    </script>
+  </body>
+</html>
